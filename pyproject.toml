@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "systems"
+version = "0.1.0"
+description = "Describe and run systems diagrams."
+authors = ["Will Larson <lethain@gmail.com>"]
+license = "MIT License"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+graphviz = "0.9"
+taskipy = "^1.9.0"
+
+[tool.poetry.dev-dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+test = "python -m unittest tests/test_*.py"

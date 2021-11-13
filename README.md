@@ -45,19 +45,17 @@ To install via PyPi:
 
 To install for local development:
 
-    git clone https://github.com/lethain/systems.git
+    git clone https://github.com/themmes/systems.git
     cd systems
-    python3 -m venv ./env
-    source ./env/bin/activate
-    python setup.py develop
+    poetry install
 
 Run tests via:
 
-    python3 -m unittest tests/test_*.py
+    poetry run task test
 
 Or run a single test via:
 
-    python3 tests/test_parse.py TestParse.test_parse_complex_formula
+    poetry run python tests/test_parse.py TestParse.test_parse_complex_formula
 
 Please open an Github issue if you run into any problems!
 
